@@ -16,4 +16,5 @@ case class Video(asset: Asset,
 
 case class Image(asset: Asset)
 
-case class VideoAds(asset: Asset, productDescription: String)
+case class VideoAds(asset: Asset,
+                    productDescription: String)
