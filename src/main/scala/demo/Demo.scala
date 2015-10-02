@@ -8,7 +8,7 @@ import show.{Show, Shows}
 object Demo extends Shows {
 
   def main(args: Array[String]) {
-    // Generate container containing 3 video, 1 image and 2 video ads
+    // Generate container containing 3 videos, 1 image and 2 video ads
     val container1 = generateContainer(3, 1, 2)
 
     printContainer(container1)
