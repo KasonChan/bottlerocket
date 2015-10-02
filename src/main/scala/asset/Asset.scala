@@ -8,11 +8,13 @@ package asset
  * @param id ID: String
  * @param name Name: String
  * @param typeIndicator Type indicator: String video, image or videoAd
+ * @param url URL: String
  * @param expirationDate Expiration date: String
  */
 case class Asset(id: String,
                  name: String,
                  typeIndicator: String,
+                 url: String,
                  expirationDate: String)
 
 /**

@@ -15,7 +15,7 @@ trait Containers {
   def generateVideos(count: Int): Seq[Video] = {
     for {
       c <- 1 to count
-      a = Asset("v" + c, "Video " + c, "video", "10/02/2015")
+      a = Asset("v" + c, "Video " + c, "video", "www.br.com/v" + c, "10/02/2015")
       v = Video(a, "10/02/2015", "movie")
     } yield v
   }
@@ -28,7 +28,7 @@ trait Containers {
   def generateImages(count: Int): Seq[Image] = {
     for {
       c <- 1 to count
-      a = Asset("i" + c, "Image " + c, "image", "10/02/2015")
+      a = Asset("i" + c, "Image " + c, "image", "www.br.com/i" + c, "10/02/2015")
       i = Image(a)
     } yield i
   }
@@ -41,7 +41,7 @@ trait Containers {
   def generateVideoAds(count: Int): Seq[VideoAd] = {
     for {
       c <- 1 to count
-      a = Asset("va" + c, "Video ad " + c, "videoAd", "10/02/2015")
+      a = Asset("va" + c, "Video ad " + c, "videoAd", "www.br.com/va" + c, "10/02/2015")
       va = VideoAd(a, "This is the video ad " + c + ".")
     } yield va
   }
@@ -67,6 +67,7 @@ trait Containers {
     println("ID: " + a.id)
     println("Name: " + a.name)
     println("Type indicator: " + a.typeIndicator)
+    println("URL: " + a.url)
     println("Expiration date: " + a.expirationDate)
   }
 
